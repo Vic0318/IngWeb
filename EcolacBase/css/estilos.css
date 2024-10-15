@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&family=Raleway:wght@200;400;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+.cabeceraPrincipal {
+	background-color: #FDFDFD;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cabeceraPrincipal img {
+	text-decoration: none;
+	padding: 1em;
+}
+
+.cabeceraPrincipal a {
+	text-decoration: none;
+	padding: 1em;
+}
+
+.cabeceraPrincipal a:hover {
+	color: #458282;
+	border-bottom: solid 2px #07B219;
+}
+
+.btn_azul {
+	background-color: #00D1DE;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.sliderPrincipal img {
+	width: 100%;
+}
+
+.titulosPage,
+.serviciosCards,
+.especiesCards,
+.galeriaParque {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em 0;
+}
+
+.titulosPage h2 {
+	color: #458282;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 200;
+	line-height: normal;
+}
+
+.titulosPage hr {
+	border-top: 1px solid #1c2873;
+	margin: 20px 0;
+}
+
+.titulosPage h5 {
+	color: #458282;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 1.75px;
+}
+
+.serviciosCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.itemCard {
+	flex: 0 0 calc(50% - 40px);
+	margin: 20px;
+	border-radius: 15px;
+	border: 1px solid #E4E4E4;
+	background: #F8F8F8;
+	padding: 1em;
+}
+
+.itemCard h3 {
+	color: #1c2873;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 1em 0;
+}
+
+.itemCard button,
+.itemCardEspecie button {
+	border-radius: 10px;
+	background: #1c2873;
+	color: #fff;
+	border: 0;
+	padding: 1em;
+}
+
+.especiesCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.itemCardEspecie {
+	flex: 0 0 calc(50% - 40px);
+	margin: 20px;
+	align-items: center;
+}
+
+.itemCardEspecie section h3 {
+	color: #656565;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 1em 0;
+}
+
+.itemCardEspecie section p {
+	color: #656565;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: justify;
+	padding: 1em 2em;
+}
+
+.galeriaParque {
+	display: grid;
+	grid-template-areas:
+		'imgh1 imgh2 imgh3 imgh4'
+		'imgh1 imgf3 imgf3 imgh4';
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 768px) {
+	.cabeceraPrincipal {
+	  flex-direction: column;
+	}
+  
+	.serviciosCards,
+	.especiesCards,
+	.galeriaParque,
+	.itemCard,
+	.itemCardEspecie {
+	  flex: 0 0 calc(100% - 20px);
+	}
+  
+	.img3 {
+	  width: 100%;
+	}
+  }
+
+.img1 {
+	grid-area: imgh1;
+	padding: 0.5em 1em;
+	width: 100%;
+	height: 78%;
+}
+
+.img2 {
+	grid-area: imgh2;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.img3 {
+	grid-area: imgh3;
+	padding: 0.5em 1em;
+	width: 42%;
+}
+
+.img4 {
+	grid-area: imgf3;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.img5 {
+	grid-area: imgh4;
+	padding: 1.5em 2em;
+	width: 100%;
+	height: 78%;
+}
+
+/* * ============================== */
+/* * =====    FORMULARIOS    ====== */
+/* * ============================== */
+.grupoInput {
+	width: 90%;
+	padding: 10px;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: .5rem;
+}
+
+label {
+	display: inline-block;
+	text-align: justify;
+	font-weight: 600;
+}
+
+.caja {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #0d6efd;
+	border-color: #0d6efd;
+}
+
+
+footer {
+	background-color: #000;
+	color: #ccc;
+	text-align: center;
+}
+
+footer h6 {
+	padding: 2em 0;
+}
+
+/* Inicio secion*/
+
+.titulosPage {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulosPage h2,
+.titulosPage h5 {
+	text-align: center;
+	color: #458282;
+}
+
+.itemCard {
+	align-items: center;
+	margin: 10px;
+}
+
+.serviciosCards {
+	display: flex;
+	justify-content: center;
+}
+
+.itemCard img {
+	width: 200px;
+	height: 200px;
+}
+
+/* el footer*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.mapouter {
+	font-size: 16px;
+	line-height: 100px;
+	text-align: center;
+	letter-spacing: normal;
+	flex-direction: column;
+}
+
+/*admin*/
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 26px;
+}
+
+.table th,
+.table td {
+	border: 1px solid #ddd;
+	padding: 4px;
+	text-align: left;
+}
+
+.table th {
+	color: white;
+}
+
+.table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.table tr:hover {
+	background-color: #ddd;
+}
+
+.table td button {
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: #0d6efd;
+	color: white;
+	border: none;
+	border-radius: 3px;
+}
+
+.table td button:hover {
+	background-color: #0d6efd;
+}
+
+
+.titulosPageD,
+.serviciosCards,
+.especiesCards,
+.galeriaParque {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2em 0;
+}
+
+.titulosPageD h2 {
+	color: #4e6299;
+	font-size: 32px;
+	font-weight: 200;
+	line-height: normal;
+}
+
+.titulosPageD hr {
+	border-top: 1px solid #1c2873;
+	margin: 20px 0;
+}
+
+.titulosPageD h5 {
+	color: #A5A5A5;
+	font-size: 12px;
+	/* Reduzco el tamaño del subtítulo */
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 1.75px;
+}
+
+/* card de admin vista distribuidor*/
+.table-responsive {
+	padding-left: 10px;
+}
+
+/* datatables*/
+#quejasTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#quejasTable th, #quejasTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#quejasTable th {
+    background-color: #f2f2f2;
+}
+
+#quejasTable tr:hover {
+    background-color: #f5f5f5;
+}
