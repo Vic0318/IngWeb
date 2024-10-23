@@ -31,6 +31,29 @@
             padding: 1rem;
         }
 
+        .menu-item {
+            display: flex; /* Utiliza flexbox para alinear el contenido */
+            justify-content: space-between; /* Espacio entre el texto y la imagen */
+            align-items: center; /* Alinea verticalmente el contenido */
+        }
+
+        .menu-item a {
+            color: white; /* Cambia el color del texto a blanco */
+            font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+            text-decoration: none; /* Elimina el subrayado */
+            flex-grow: 1; /* Permite que el enlace ocupe el espacio disponible */
+        }
+
+        .menu-item a:hover {
+            text-decoration: underline; /* Opcional: añade subrayado al pasar el ratón */
+        }
+
+        .menu-icon {
+            width: 30px; /* Ajusta el tamaño de las imágenes según sea necesario */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-left: 10px; /* Espacio entre el texto y la imagen */
+        }
+
         .content {
             width: 80%; /* Ajusta el ancho del contenido */
             margin-left: 1rem;
@@ -50,27 +73,31 @@
 </head>
 <body>
     <header>
-        <img style="width: 200px; height: 75px;" src="img/logo-UTPL-2018-01.png" alt="Logo UTPL"> 
+        <img style="width: 200px; height: 75px;" src="img\logo-UTPL-2018-01.png" alt="Logo UTPL"> 
         <h1>UNIVERSIDAD TECNICA PARTICULAR DE LOJA</h1>
     </header> 
     <div class="container">
         <div class="sidebar">
             <h1>Menú</h1>
+            <img src="img\menu.png" alt="Barras menu" class="menu-icon">
             <div class="menu-item">
                 <a href="#">Ejemplo 1</a>
+                <img src="img\flecha-correcta.png" alt="Imagen Ejemplo 1" class="menu-icon">
             </div>
             <hr/>
             <div class="menu-item">
                 <a href="#">Ejemplo 2</a>
+                <img src="img\flecha-correcta.png" alt="Imagen Ejemplo 2" class="menu-icon">
             </div>
             <hr/>
             <div class="menu-item">
                 <a href="#">Ejemplo 3</a>
+                <img src="img\flecha-correcta.png" alt="Imagen Ejemplo 3" class="menu-icon">
             </div>
             <hr/>
         </div>
         <div class="content">
-            <img style="width: 500px;" src="img\imagen-ejemplo.png" alt="Imagen Ejemplo">
+            <img style="width: 1000px;" src="img\imagen-ejemplo.png" alt="Imagen Ejemplo">
         </div>
     </div>
     <footer>
